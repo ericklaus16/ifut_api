@@ -1,4 +1,5 @@
-const fieldModel = require('../models/fieldModel');
+const FieldModel = require('../models/fieldModel');
+const fieldModel = new FieldModel();
 
 const getFields = async (req, res) => {
     try {

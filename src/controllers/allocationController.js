@@ -1,4 +1,5 @@
-const allocationModel = require('../models/allocationModel');
+const AllocationModel = require('../models/allocationModel');
+const allocationModel = new AllocationModel();
 
 const getAllocationsByUserId = async (req, res) => {
     try {

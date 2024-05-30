@@ -1,10 +1,10 @@
 const { pool } = require('../config/dbConfig');
 
-const getFields = async () => {
-    const result = await pool.query('SELECT * FROM fields');
-    return result.rows;
-};
+class FieldModel {
+    async getFields() {
+        const result = await pool.query('SELECT * FROM fields');
+        return result.rows;
+    }
+}
 
-module.exports = {
-    getFields
-};
+module.exports = FieldModel;
